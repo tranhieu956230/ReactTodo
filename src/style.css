@@ -1,0 +1,166 @@
+body {
+    background-image:url("backgroundimage.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+   
+    
+}
+<<<<<<< HEAD
+#error{
+    color:rgb(209, 47, 47);
+}
+#success{
+    color:green;
+}
+=======
+
+>>>>>>> 83307eebb74df8777bfd7fd1ac5854f42c6323a6
+#home ul {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#home ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 9px 8px 9px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#home ul li:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#home ul li.completed {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#home ul li.completed::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 5px;
+}
+
+#close:hover {
+    background-color: #f44336;
+    color: white;
+}
+#edit {
+    position: absolute;
+    top: 0px;
+    right: 42px;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 5px;
+}
+
+#edit:hover {
+    background-color: #00a708;
+    color: white;
+}
+#home #head {
+    background-color: rgb(235, 0, 0);
+    padding: 5px 40px 20px 40px;
+    text-align: center;
+}
+
+#head input {
+    width: 75%;
+    border: 0;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    background-color: white(226, 226, 226);
+}
+
+#head button {
+    border: 0;
+    width: 25%;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#head button:hover {
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+#home #head h1 {
+    margin: 0;
+    padding: 8px;
+    color: white;
+}
+
+#home {
+    width: 600px;
+    margin: auto;
+}
+
+#navbar li{
+   
+    display:inline;
+    padding: 10px;
+}
+#navbar {
+   list-style-type:none;
+   
+   
+}
+
+
+#login{
+    background-color:rgb(83, 182, 83);
+    width:400px;
+    margin:auto;
+    text-align: center;
+
+}
+
+#register{
+    background-color:rgb(83, 182, 83);
+    width:400px;
+    margin:auto;
+    text-align: center;
+}
+
+#timer {
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 5px;
+}
