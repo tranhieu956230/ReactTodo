@@ -25,7 +25,6 @@ class RegisterPage extends React.Component {
         this.props.signUp(this.state)
     }
     redirect = () => {
-<<<<<<< HEAD
         this.setState({redirect:true})
     }
     clearState = () => {
@@ -39,25 +38,20 @@ class RegisterPage extends React.Component {
             this.clearState()
             return <Redirect to="/login" />
         }
-=======
       
         this.setState({redirect:true})
     }
     render() {
-        const successMessage = (this.props.success) ? <p>You've successfully created a new account<br/>Redirect to Login in 5 seconds...<br/></p> : null
+        const successMessage = (this.props.success) ? <p id="success">You've successfully created a new account<br/>Redirect to Login in 5 seconds...<br/></p> : null
         if(this.props.success) setTimeout(()=>{this.redirect()} ,5000)
         if(this.state.redirect) return<Redirect to="/login" />
         
->>>>>>> 83307eebb74df8777bfd7fd1ac5854f42c6323a6
         return (
             <div id="register">
                 <h1>Sign up</h1>
                 <p>Please fill in this form to create an account</p>
-<<<<<<< HEAD
+
                 <p id="error">{this.props.message}</p>
-=======
-                <p>{this.props.message}</p>
->>>>>>> 83307eebb74df8777bfd7fd1ac5854f42c6323a6
                 {successMessage}
                 <hr />
                 

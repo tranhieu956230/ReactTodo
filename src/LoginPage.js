@@ -24,22 +24,16 @@ class LoginPage extends React.Component{
                    <form>
                         <h1>Login</h1>
                         <p>You must login in order to continue</p>
-<<<<<<< HEAD
                         <p id="error">{this.props.message}</p>
-=======
-                        <p>{this.props.message}</p>
->>>>>>> 83307eebb74df8777bfd7fd1ac5854f42c6323a6
                         <label for="email"><b>Email</b></label><br/>
                         <input type="text" placeholder="Email" name="email" onChange={this.emailChange} required/><br/>
                         <label for="psw"><b>Password</b></label><br/>
                         <input type="password" placeholder="password" onChange={this.passwordChange} name="psw" required/><br/>
                         <button type="button" onClick={this.login}>Login</button>
                     </form>
-<<<<<<< HEAD
-                    <p>Not registered? <span> <Link to="/register">Create an account</Link></span></p>
-=======
-                    <p>Not registered? <span><Link to="/register">Create an account</Link></span></p>
->>>>>>> 83307eebb74df8777bfd7fd1ac5854f42c6323a6
+
+                    <p>Not registered? <span onClick={this.props.clearState}> <Link to="/register" >Create an account</Link></span></p>
+
             </div>
         )
     }

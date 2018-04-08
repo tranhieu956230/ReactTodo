@@ -34,14 +34,15 @@ class App extends React.Component {
        })
     }
     clearState = () => {
-        this.setState({registerState:false})
+        this.setState({registerState:false,loginMessage:"",registerMessage:""})
     }
+    
     render() {
     console.log(this.state.loginMessage)
         return (
             <BrowserRouter>
                 <div>
-                    <NavBar authorize={this.state.authorize} logout={this.logout}/>
+                    <NavBar authorize={this.state.authorize} logout={this.logout} clearState={this.clearState}/>
                     <Switch>
                         <Route exact path="/" component={() => <Home authorize={this.state.authorize}/>} />
                         <Route exact path="/login"  component={() => 
@@ -49,6 +50,7 @@ class App extends React.Component {
                          login={this.login}
                          authorize={this.state.authorize} 
                          message={this.state.loginMessage}
+                         clearState={this.clearState}
                          />}
                          />
                         <Route exact path="/register" component={() => 
